@@ -15,7 +15,6 @@
 
 .loader-content {
   gap: 2rem;
-  /* align-items: center; */
 }
 
 .loader-count {
@@ -87,4 +86,5 @@
   align-items: center;
   margin: 19px;
 }
+
 }
