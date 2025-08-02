@@ -10,7 +10,7 @@ import bg9 from './img/bg9.jpg'
 import bga from './img/bga.jpg'
 import bgj from './img/bgj.jpg'
 import more from './img/more.svg'
-import bgv from './video/bgvideo.mp4'
+import bgv from '/bgvideo.mp4'
 import './App.css'
 import './Menu.css'
 import Navbar from './Navbar';
