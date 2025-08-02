@@ -2,20 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import "./ImageGrid.css";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-// Slideshow 1 images
 import bg1 from './img/bg1.jpg';
 import bg2 from './img/bg2.jpg';
 import bg3 from './img/bg3.jpg';
 import bg4 from './img/bg4.jpg';
 import bg5 from './img/bg5.jpg';
 
-// Static images
 import bg10 from './img/bg10.jpg';
 import bg11 from './img/bg11.jpg';
 import bg12 from './img/bg12.jpg';
 import bg13 from './img/bg13.jpg';
 
-// Slideshow 2 images
 import bg15 from './img/bg15.jpg';
 import bg16 from './img/bg16.jpg';
 import bg17 from './img/bg17.jpg';
@@ -89,16 +86,10 @@ const ImageGrid = () => {
         </div>
         <div ref={(el) => extraRef.current[3] = el} className="grid-item div10"><img src={bg12} alt="bg12" /></div>
         <div ref={(el) => extraRef.current[4] = el} className="grid-item div11"><img src={bg13} alt="bg13" /></div>
-        {/* <div ref={(el) => extraRef.current[5] = el} className="grid-item slideshow div12">
-          <img src={slideshow2[index2]} alt="slideshow2" />
-          <div className="controls">
-            <button onClick={() => setIndex2((index2 - 1 + slideshow2.length) % slideshow2.length)}><FaArrowLeft /></button>
-            <button onClick={() => setIndex2((index2 + 1) % slideshow2.length)}><FaArrowRight /></button>
-          </div>
-        </div> */}
       </div>
     </div>
   );
 };
 
 export default ImageGrid;
+
