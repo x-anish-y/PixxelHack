@@ -1,12 +1,28 @@
-# React + Vite
+# 🌍 TravSmart: Make A Start & Travel Smart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TravSmart** is more than just a travel application — it’s a movement to discover, connect, and empower.
 
-Currently, two official plugins are available:
+We’ve built it with a mission to redefine how people explore hidden destinations and support local communities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Discover Hidden Gems**: Explore offbeat destinations known mostly to locals — far from the tourist crowds.
+* **Empower Local Voices**: Let local artisans, vendors, and guides list their services directly — without middlemen or commissions.
+* **Authentic Experiences**: Dive deep into the cultural essence of each place with genuine, community-driven experiences.
+* **Anonymous Reviews**: No sign-ups, no data tracking — just honest, anonymous feedback from real travelers.
+* **Purpose-Driven Tourism**: Aligned with **UN Sustainable Development Goal 8** — we support **decent work** and **inclusive economic growth** through **sustainable tourism**.
+
+---
+
+## 🎯 Our Vision
+
+To create a travel platform that not only benefits travelers but uplifts the local economies, preserves cultural heritage, and encourages responsible exploration.
+
+---
+## 🚀 Join Us
+
+Let’s make travel more meaningful.
+**Make a start. Travel smart. 🌱**
+
