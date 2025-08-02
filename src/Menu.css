@@ -100,7 +100,6 @@
   }
 }
 
-/* Responsive */
 @media (min-width: 600px) {
   .menu {
     width: 60%;
@@ -126,3 +125,4 @@
     margin-bottom: 1.5rem;
   }
 }
+
