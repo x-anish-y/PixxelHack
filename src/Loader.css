@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Playfair+Display:wght@700&display=swap');
+
+
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: #06402B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+.loader-content {
+  gap: 2rem;
+  /* align-items: center; */
+}
+
+.loader-count {
+  font-size: 1.3rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.clip-text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.clip-line {
+  font-size: 11.5rem;
+  font-weight: 700;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: revealUp 0.7s ease-out forwards;
+}
+
+@keyframes revealUp {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.now-text {
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.now-text.alt {
+  font-family: 'Playfair Display', serif;
+  color: #888;
+  transform: scale(1.02);
+}
+
+
+.loader-hint {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  line-height: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .clip-line {
+    font-size: 4rem;
+  }
+
+  .loader-count {
+    font-size: 1rem;
+  }
+
+  .loader-hint {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .loader-content {
+    gap: 1.2rem;
+  }
+
+  .loader-content {
+  gap: 2rem;
+  align-items: center;
+  margin: 19px;
+}
+}

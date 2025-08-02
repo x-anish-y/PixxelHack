@@ -1,0 +1,128 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: auto;
+  max-height: 100vh;
+  width: 60%;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  z-index: 1000;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px 0 0 8px;
+}
+
+.menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(20px);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+  border-radius: 0.25rem;
+}
+
+.menu-item:hover::before {
+  transform: scaleX(1);
+}
+
+.menu-item-text {
+  transition: transform 0.3s ease-out, color 0.3s ease;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.menu-item:hover .menu-item-text {
+  color: black;
+  transform: translateX(-10px);
+}
+
+.menu.is-open .menu-item {
+  animation: menuItemFadeIn 0.5s forwards ease-out;
+}
+
+.menu.is-open .menu-item:nth-child(1) { animation-delay: 0.1s; }
+.menu.is-open .menu-item:nth-child(2) { animation-delay: 0.2s; }
+.menu.is-open .menu-item:nth-child(3) { animation-delay: 0.3s; }
+.menu.is-open .menu-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes menuItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .menu {
+    width: 60%;
+  }
+  .menu-items {
+    padding: 3rem;
+  }
+  .menu-item {
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu {
+    width: 15%;
+  }
+  .menu-items {
+    padding: 4rem;
+  }
+  .menu-item {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}

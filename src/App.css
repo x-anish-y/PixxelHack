@@ -1,0 +1,271 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px;
+  padding: 9px;
+  border-radius: 9px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.logo {
+  border-radius: 50px;
+}
+
+
+.Appname {
+  font-weight: 900;
+  font-size: 32px;
+  color: white;
+}
+
+.slider-box {
+  width: 97%;
+  margin: auto;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+.slider::before,
+.slider::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
+}
+
+.slide-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 500px;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+  transition: transform 0.4s ease;
+}
+
+.slide:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 200px;
+  }
+
+  .slide {
+    width: 300px;
+    height: 200px;
+  }
+
+  .slider::before,
+  .slider::after {
+    width: 70px;
+  }
+}
+
+
+
+
+.videoTag {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.text{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 18px;
+  margin: 30px;
+  margin-top: 15px;
+  
+}
+
+.onetext{
+  backdrop-filter: blur(10px);
+  padding: 14px 20px;
+  border-radius: 9px;
+}
+
+@media screen and (max-width: 768px) {
+  
+.text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 30px;
+  margin-top: 15px;
+  
+}
+
+.onetext{
+  backdrop-filter: blur(10px);
+  padding: 14px 20px;
+  border-radius: 9px;
+  height: 140px;
+  overflow:auto
+}
+
+}
+
+
+
+.app-container {
+  position: relative;
+}
+
+.hidden-behind {
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+
+.ok{
+  padding: 5px;
+  /* backdrop-filter: blur(10px); */
+  min-width: 40%;
+  border-radius: 22px;
+}
+
+.left img{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.right img{
+  width: 22px;
+  filter: invert();
+
+}
+
+.left{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.myteam{
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.students{
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 12px;
+  display: flex;
+  border-radius: 22px;
+  width: 100%;
+}
+
+.students {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 12px;
+  display: flex;
+  border-radius: 22px;
+  width: 100%;
+  z-index: 1;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.popup {
+  position: absolute;
+  top: -130px; /* how far above the card it pops */
+  left: 16.5vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(0.95);
+  z-index: 10;
+}
+
+.popup img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+/* SHOW ON HOVER */
+.students:hover .popup {
+  opacity: 1;
+  transform: scale(1);
+}
+

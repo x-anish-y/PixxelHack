@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Patrick Hand SC", cursive;
+  color: white;
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e6f0ec; /* soft background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #06402B;
+  border-radius: 10px;
+  border: 2px solid #e6f0ec; /* gives padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0a5a3d;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #06402B #e6f0ec;
+}

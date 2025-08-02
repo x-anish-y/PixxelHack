@@ -1,0 +1,71 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 3px;
+  z-index: 1100;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-logo {
+  margin-right: auto;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1100;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-button:active {
+  transform: scale(0.9);
+}
+
+.hamburger-lines span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hamburger-button:hover .line1 {
+  transform: translateY(-4px);
+}
+
+.hamburger-button:hover .line3 {
+  transform: translateY(4px);
+}
+
+.hamburger-lines.open .line1 {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger-lines.open .line2 {
+  opacity: 0;
+}
+
+.hamburger-lines.open .line3 {
+  transform: translateY(-4px) rotate(-45deg);
+}
