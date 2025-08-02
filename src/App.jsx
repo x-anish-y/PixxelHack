@@ -29,7 +29,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 3200); // total animation duration
+    }, 3200);
     return () => clearTimeout(timer);
   }, []);
   useEffect(() => {
@@ -47,11 +47,7 @@ function App() {
     <>
       <div className="app-container">
         {showLoader && <Loader />}
-
-        {/* Your original homepage UI stays here */}
         <div className={`app-content ${showLoader ? "hidden-behind" : ""}`}>
-          {/* Keep your entire home page code here */}
-          {/* More stuff */}
         </div>
       </div>
 
