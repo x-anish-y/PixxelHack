@@ -104,7 +104,6 @@
   }
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   .slider {
     height: 200px;
@@ -184,7 +183,6 @@
 
 .ok{
   padding: 5px;
-  /* backdrop-filter: blur(10px); */
   min-width: 40%;
   border-radius: 22px;
 }
@@ -246,7 +244,7 @@
 
 .popup {
   position: absolute;
-  top: -130px; /* how far above the card it pops */
+  top: -130px;
   left: 16.5vw;
   opacity: 0;
   pointer-events: none;
@@ -263,7 +261,6 @@
   object-fit: cover;
 }
 
-/* SHOW ON HOVER */
 .students:hover .popup {
   opacity: 1;
   transform: scale(1);
