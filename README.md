@@ -21,6 +21,11 @@ We’ve built it with a mission to redefine how people explore hidden destinatio
 To create a travel platform that not only benefits travelers but uplifts the local economies, preserves cultural heritage, and encourages responsible exploration.
 
 ---
+
+## 🎨 Prototype  
+👉 [Website](https://travsmart.netlify.app/)  
+
+---
 ## 🚀 Join Us
 
 Let’s make travel more meaningful.
