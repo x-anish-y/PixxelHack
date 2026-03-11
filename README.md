@@ -1,33 +1,143 @@
-# 🌍 TravSmart: Make A Start & Travel Smart
+# 🌍 TravSmart – Smart Travel Discovery Platform
 
-**TravSmart** is more than just a travel application — it’s a movement to discover, connect, and empower.
+![TravSmart Architecture](public/Screenshot%202026-03-11%20131505.png)
 
-We’ve built it with a mission to redefine how people explore hidden destinations and support local communities.
+TravSmart is a modern travel discovery web application designed to help users explore destinations, discover hidden places, and plan their next adventure through an engaging and responsive interface.
 
----
+The platform focuses on presenting travel inspiration with smooth UI interactions and visually rich content.
 
-## ✨ Key Features
-
-* **Discover Hidden Gems**: Explore offbeat destinations known mostly to locals — far from the tourist crowds.
-* **Empower Local Voices**: Let local artisans, vendors, and guides list their services directly — without middlemen or commissions.
-* **Authentic Experiences**: Dive deep into the cultural essence of each place with genuine, community-driven experiences.
-* **Anonymous Reviews**: No sign-ups, no data tracking — just honest, anonymous feedback from real travelers.
-* **Purpose-Driven Tourism**: Aligned with **UN Sustainable Development Goal 8** — we support **decent work** and **inclusive economic growth** through **sustainable tourism**.
+🌐 **Live Demo**  https://travsmart.netlify.app/
 
 ---
 
-## 🎯 Our Vision
+# 📌 Project Overview
 
-To create a travel platform that not only benefits travelers but uplifts the local economies, preserves cultural heritage, and encourages responsible exploration.
+TravSmart provides a user-friendly platform where travelers can explore destinations and discover unique places around the world.
+
+The application focuses on:
+
+- Beautiful travel destination showcases
+- Smooth browsing experience
+- Responsive design for multiple devices
+- Clean and modern user interface
+
+This project demonstrates modern frontend development practices using component-based architecture and responsive design principles.
 
 ---
 
-## 🎨 Prototype  
-👉 [Website](https://travsmart.netlify.app/)  
+# 🚀 Core Features
+
+- 🗺️ Explore travel destinations
+- 📸 View destination images and details
+- 🌟 Discover unique and hidden travel spots
+- 📱 Fully responsive design
+- ⚡ Fast and smooth UI interactions
 
 ---
-## 🚀 Join Us
 
-Let’s make travel more meaningful.
-**Make a start. Travel smart. 🌱**
+# 🛠 Tech Stack
 
+| Layer | Technology |
+|------|-------------|
+| Frontend | React / Next.js |
+| Styling | CSS / Tailwind CSS |
+| UI Design | Modern responsive layouts |
+| Deployment | Netlify |
+
+---
+
+# ⚙️ How It Works
+
+1. Users visit the platform to explore travel destinations.
+2. The interface presents curated places and highlights.
+3. Users can browse through locations and discover travel inspiration.
+4. The responsive layout ensures a seamless experience across devices.
+
+---
+
+# 📂 Project Structure
+
+```
+PixxelHack/
+│
+├── src/                # Application source code
+├── components/         # Reusable UI components
+├── public/             # Images and static assets
+├── styles/             # Styling files
+└── package.json
+```
+
+---
+
+# 🔧 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/x-anish-y/PixxelHack.git
+cd PixxelHack
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run Development Server
+
+```bash
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+# 🌍 Deployment
+
+The application is deployed using **Netlify**.
+
+It can also be deployed on:
+
+- Netlify
+- Vercel
+- Any Node.js hosting platform
+
+---
+
+# 📈 Future Improvements
+
+- Travel itinerary planner
+- User accounts and saved destinations
+- Interactive maps integration
+- Destination filtering and search
+- Travel recommendations system
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates:
+
+- Modern frontend web development
+- Component-based UI architecture
+- Responsive layout design
+- Travel platform interface design
+- Deployment of web applications
+
+---
+
+# 👨‍💻 Author
+
+Developed by **Anish Sasmal** as part of a frontend web development project.
+
+---
+
+# 📜 License
+
+This project is open-source and available under the MIT License.
